@@ -22,6 +22,7 @@ const OutputView = {
 		return lottoList;
 	},
 	printResult(result) {
+		Console.print("");
 		Console.print(OUTPUT_VIEW.printResult(result));
 	},
 	printRate(inputPrice, result) {
