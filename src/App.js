@@ -7,6 +7,8 @@ class App {
 		OutputView.printRandomLottos(OutputView.printBoughtLottos(inputPrice));
 		const inputWinningNumber = await InputView.readWinningNumber();
 		console.log(inputWinningNumber);
+		const inputBonusNumber = await InputView.readBonusNumber();
+		console.log(inputBonusNumber);
 	}
 }
 
