@@ -9,16 +9,20 @@ const OutputView = {
 		Console.print(OUTPUT_VIEW.printLottos(lottoCount));
 		return lottoCount;
 	},
-	printRandomLottos(lottoCount) {
+	printRandomLottos(lottoCount, lottoList) {
 		//나중에 리펙
 		Array.from({ length: lottoCount }).forEach(() => {
 			const radomNum = IssueRandomLotto.issueRandomNumber();
-			IssueRandomLotto.issueLotto(radomNum);
+			lottoList.setLottoList(IssueRandomLotto.issueLotto(radomNum));
 			Console.print(radomNum);
 		});
 		Console.print("");
+
+		return lottoList;
 	},
-    
+	printResult(result) {
+		Console.print(OUTPUT_VIEW.printResult(result));
+	},
 };
 
 export default OutputView;
