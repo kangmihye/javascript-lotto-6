@@ -24,3 +24,8 @@ export const PRICE = Object.freeze({
 	5.5: 30_000_000,
 	6: 2_000_000_000,
 });
+
+export const ERROR = Object.freeze({
+	isInvalidNum: "[ERROR] 숫자가 잘못된 형식입니다.",
+	isInvalidPrice: "[ERROR] 구입 금액은 1,000원 단위로 입력 해주세요.",
+});
