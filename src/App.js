@@ -5,7 +5,7 @@ class App {
 	async play() {
 		const inputPrice = await InputView.readPrice();
 		console.log(inputPrice);
-		// OutputView.printBoughtLottos(inputPrice);
+		OutputView.printBoughtLottos(inputPrice);
 	}
 }
 

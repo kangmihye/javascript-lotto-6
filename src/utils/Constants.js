@@ -3,5 +3,5 @@ export const INPUT_VIEW = Object.freeze({
 });
 
 export const OUTPUT_VIEW = Object.freeze({
-	printSomthing: "",
+	printLottos: (lottoCount) => `${lottoCount}개를 구매했습니다.`,
 });
