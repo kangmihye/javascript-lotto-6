@@ -1,9 +1,11 @@
 import { Console } from "@woowacourse/mission-utils";
 import { INPUT_VIEW } from "../utils/Constants.js";
+import { validatePrice } from "./viewService/validateInput.js";
+import inputErrorHandler from "./viewService/inputErrorHandler.js";
 
 const InputView = {
 	async readPrice() {
-		const inputPrice = await Console.readLineAsync(INPUT_VIEW.askPrice);
+		const inputPrice = inputErrorHandler(INPUT_VIEW.askPrice, validatePrice);
 		return inputPrice;
 	},
 	async readWinningNumber() {
