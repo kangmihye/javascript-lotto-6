@@ -15,6 +15,10 @@ class Lotto {
 	compareWinningNum(winningNumbers) {
 		return this.#numbers.filter((num) => winningNumbers.includes(num)).length;
 	}
+
+	isIncludedBonusNum(bonusNumbers) {
+		return this.#numbers.includes(bonusNumbers);
+	}
 }
 
 export default Lotto;
