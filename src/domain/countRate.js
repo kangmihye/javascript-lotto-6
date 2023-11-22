@@ -9,6 +9,3 @@ const countRate = (inputPrice, result) => {
 };
 
 export default countRate;
-
-// console.log(countRate("14000", { 3: 1, 4: 0, 5: 0, 6: 0, 5.5: 0 })); 35.714285714285715
-// Math.round(roundNumber * 100) / 100;

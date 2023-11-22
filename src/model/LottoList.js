@@ -1,21 +1,15 @@
 class LottoList {
-	LottoList = []; // [[]]형태로 저장
+	#lottoList = [];
 
 	constructor() {}
 
 	setLottoList(Lotto) {
-		this.LottoList.push(Lotto);
+		this.#lottoList.push(Lotto);
 	}
 
-	get() {
-		//삭제예정
-		return this.LottoList;
-	}
-
-	//여기서 총 맞은 개수 저장
 	compareTotalWinningNum(winningNumbers) {
 		const equalNumbers = [];
-		this.LottoList.forEach((lotto) => {
+		this.#lottoList.forEach((lotto) => {
 			equalNumbers.push(lotto.compareWinningNum(winningNumbers));
 		});
 		return equalNumbers;
@@ -27,7 +21,7 @@ class LottoList {
 			return idxArr;
 		}, []);
 
-		const equalBonusIdx = equalFiveIdx.filter((idx) => this.LottoList[idx].isIncludedBonusNum(bonusNumbers));
+		const equalBonusIdx = equalFiveIdx.filter((idx) => this.#lottoList[idx].isIncludedBonusNum(bonusNumbers));
 
 		equalBonusIdx.forEach((idx) => {
 			resultsWinningNum[idx] = 5.5;
