@@ -5,8 +5,8 @@ const IssueRandomLotto = {
 	issueRandomNumber: () => {
 		return Random.pickUniqueNumbersInRange(1, 45, 6).sort((a, b) => a - b);
 	},
-	issueLotto: () => {
-		return new Lotto(IssueRandomLotto.issueRandomNumber());
+	issueLotto: (radomNum) => {
+		return new Lotto(radomNum);
 	},
 };
 

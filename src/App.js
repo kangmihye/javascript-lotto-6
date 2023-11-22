@@ -6,6 +6,7 @@ class App {
 		const inputPrice = await InputView.readPrice();
 		console.log(inputPrice);
 		OutputView.printBoughtLottos(inputPrice);
+		OutputView.printRandomLottos(inputPrice);
 	}
 }
 
