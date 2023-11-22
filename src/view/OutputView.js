@@ -10,10 +10,15 @@ const OutputView = {
 		return lottoCount;
 	},
 	printRandomLottos(lottoCount) {
-		const radomNum = IssueRandomLotto.issueRandomNumber();
-		IssueRandomLotto.issueLotto(radomNum);
-		Console.print(radomNum);
+		//나중에 리펙
+		Array.from({ length: lottoCount }).forEach(() => {
+			const radomNum = IssueRandomLotto.issueRandomNumber();
+			IssueRandomLotto.issueLotto(radomNum);
+			Console.print(radomNum);
+		});
+		Console.print("");
 	},
+    
 };
 
 export default OutputView;
