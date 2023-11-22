@@ -13,3 +13,11 @@ export const OUTPUT_VIEW = Object.freeze({
 		`5개 일치, 보너스 볼 일치 (30,000,000원) - ${result[5.5]}개\n` +
 		`6개 일치 (2,000,000,000원) -  ${result[6]}개\n`,
 });
+
+export const PRICE = Object.freeze({
+	3: 5000,
+	4: 50_000,
+	5: 1_500_000,
+	5.5: 30_000_000,
+	6: 2_000_000_000,
+});
