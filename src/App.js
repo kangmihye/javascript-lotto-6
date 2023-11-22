@@ -1,4 +1,5 @@
 import compareResult from "./domain/compareResult.js";
+import generateResultObj from "./domain/generateResultObj.js";
 import LottoList from "./model/LottoList.js";
 import InputView from "./view/InputView.js";
 import OutputView from "./view/OutputView.js";
@@ -23,6 +24,10 @@ class App {
 		const resultsBonusNum = compareResult.getResultCompareBonusNum(lottoList, resultsWinningNum, bonusNumbers);
 
 		console.log("보너스 결과", resultsBonusNum);
+
+		const result = generateResultObj(resultsBonusNum);
+
+		console.log("결과객체", result);
 	}
 }
 
