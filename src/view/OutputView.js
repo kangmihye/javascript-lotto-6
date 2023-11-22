@@ -2,6 +2,7 @@ import { Console } from "@woowacourse/mission-utils";
 import { OUTPUT_VIEW } from "../utils/Constants.js";
 import OutputViewService from "./viewService/OutputViewService.js";
 import IssueRandomLotto from "../domain/IssueRandomLotto.js";
+import countRate from "../domain/countRate.js";
 
 const OutputView = {
 	printBoughtLottos(inputPrice) {
@@ -22,6 +23,10 @@ const OutputView = {
 	},
 	printResult(result) {
 		Console.print(OUTPUT_VIEW.printResult(result));
+	},
+	printRate(inputPrice, result) {
+		const rate = countRate(inputPrice, result);
+		Console.print(OUTPUT_VIEW.printRate(OutputViewService.roundSecond(rate)));
 	},
 };
 

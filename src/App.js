@@ -27,6 +27,7 @@ class App {
 		console.log("결과객체", result);
 
 		OutputView.printResult(result);
+		OutputView.printRate(inputPrice, result);
 	}
 }
 

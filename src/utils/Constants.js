@@ -11,7 +11,8 @@ export const OUTPUT_VIEW = Object.freeze({
 		`4개 일치 (50,000원) - ${result[4]}개\n` +
 		`5개 일치 (1,500,000원) - ${result[5]}개\n` +
 		`5개 일치, 보너스 볼 일치 (30,000,000원) - ${result[5.5]}개\n` +
-		`6개 일치 (2,000,000,000원) -  ${result[6]}개\n`,
+		`6개 일치 (2,000,000,000원) -  ${result[6]}개`,
+	printRate: (rate) => `총 수익률은 ${rate}%입니다.`,
 });
 
 export const PRICE = Object.freeze({
